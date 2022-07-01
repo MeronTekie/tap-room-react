@@ -17,7 +17,7 @@ const List = (props) => {
   )
 }
 List.propTypes ={
-  List:PropTypes.array,
+  list:PropTypes.array,
   onSelect:PropTypes.func
 }
 

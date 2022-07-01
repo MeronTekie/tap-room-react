@@ -2,6 +2,8 @@ import React, { Component } from 'react'
 import KegDetails from '../KegDetails/KegDetails';
 import Edit from '../Edit/Edit';
 import NewKegForm from '../NewKegForm/NewKegForm';
+import List from '../List/List';
+import './KegControl.css'
 
 
 
@@ -78,9 +80,9 @@ import NewKegForm from '../NewKegForm/NewKegForm';
         currentlyVisibleState = 
         <KegDetails 
         keg = {this.state.selectedKeg} 
-        onClickingDelete = {this.handleDeletingKeg} 
+        onClickingDelete = {this.handleDeletionKeg} 
         onClickingEdit = {this.handleEditClick} 
-        onClickingDecrement = {this.handleDecrementingPints} />
+        />
 
         buttonText = "Return to Keg List";
       } else if (this.state.formVisibleOnPage) {
@@ -88,14 +90,14 @@ import NewKegForm from '../NewKegForm/NewKegForm';
 
         buttonText = "Return to Keg List";
       } else {
-        // currentlyVisibleState = <KegList kegList={this.state.mainKegList} onKegSelection={this.handleChangingSelectedKeg} />
+        currentlyVisibleState = <List list={this.state.mainKegList} onSelect={this.handleChangeSelectedKeg } />
       
-        // buttonText = "Add Keg";
+        buttonText = "Add A Keg";
       }
       return (
         <React.Fragment>
           {currentlyVisibleState}
-          <button onClick={this.handleClick}> {buttonText}</button>
+          <button className='button'  onClick={this.handleClick}> {buttonText}</button>
         </React.Fragment>
       )
     }

@@ -13,12 +13,12 @@ const Keg = (props) => {
   )
 }
 Keg.propTypes ={
-  name:PropTypes.string,
-  brandName:PropTypes.string,
-  alcoholContent:PropTypes.string,
-  type:PropTypes.string,
+  name:PropTypes.string.isRequired,
+  brandName:PropTypes.string.isRequired,
+  alcoholContent:PropTypes.string.isRequired,
+  type:PropTypes.string.isRequired,
   pints:PropTypes.number,
-  price:PropTypes.number,
+  price:PropTypes.number.isRequired,
   id:PropTypes.string,
   whenKegClicked:PropTypes.func
 }

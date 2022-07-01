@@ -5,8 +5,8 @@ const ReusableForm = (props) => {
   const min =120;
   const max =124;
   return (
-    
-    <React.Fragment>
+    <div className='card'>
+      <React.Fragment>
       <form onSubmit={props.formSubmissionHandler}>
         <input 
         type="text"
@@ -37,6 +37,8 @@ const ReusableForm = (props) => {
         <button type='submit'>{props.buttonText}</button>
       </form>
     </React.Fragment>
+  </div>
+    
   )
 }
 ReusableForm.propTypes ={

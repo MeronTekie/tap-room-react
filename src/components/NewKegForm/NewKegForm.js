@@ -2,6 +2,7 @@ import React from 'react'
 import { v4 } from 'uuid'
 import PropTypes from 'prop-types'
 import ReusableForm from '../ReusableForm/ReusableForm'
+import './NewKegForm.css'
 
 const NewKegForm = (props) => {
  const  newKegFormSubmission=(event)=>{
@@ -19,7 +20,7 @@ const NewKegForm = (props) => {
   }
 
   return (
-    <div>
+    <div className='card'>
       <React.Fragment>
         <ReusableForm 
         formSubmissionHandler={newKegFormSubmission}

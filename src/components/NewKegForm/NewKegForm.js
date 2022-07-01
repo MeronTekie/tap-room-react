@@ -21,11 +21,10 @@ const NewKegForm = (props) => {
   return (
     <div>
       <React.Fragment>
-            <ReusableForm 
-            formSubmissionHandler={newKegFormSubmission}
-            buttonText="Click here to Add" />
-        </React.Fragment> 
-
+        <ReusableForm 
+        formSubmissionHandler={newKegFormSubmission}
+        buttonText="Click here to Add" />
+      </React.Fragment> 
     </div>
   )
 }

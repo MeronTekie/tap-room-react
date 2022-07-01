@@ -63,7 +63,7 @@ export class KegControl extends Component {
   }
   render() {
     let currentlyVisibleState =null;
-    let buttonText =null;
+    let buttonText ='Hi Thre';
     return (
         <React.Fragment>
           {currentlyVisibleState}

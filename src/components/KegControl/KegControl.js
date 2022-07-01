@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import NewKegForm from '../NewKegForm/NewKegForm';
 
 export class KegControl extends Component {
   constructor(props){
@@ -26,7 +27,16 @@ export class KegControl extends Component {
       ));
     }
   }
+  handleAddingNewKegToList =(newKeg)=>{
+    const  newMainKegList =this.state.mainKegList.concat(newKeg);
+    this.setState({
+      mainKegList:newMainKegList,
+      formVisibleOnPage:false
+    });
+  }
   render() {
+    let currentlyVisibleState =null;
+    let buttonText =null;
     return (
       <div>KegControl</div>
     )

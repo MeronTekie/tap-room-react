@@ -1,6 +1,5 @@
-import { keyboard } from '@testing-library/user-event/dist/keyboard';
 import React, { Component } from 'react'
-import NewKegForm from '../NewKegForm/NewKegForm';
+
 
 export class KegControl extends Component {
   constructor(props){
@@ -43,17 +42,33 @@ export class KegControl extends Component {
       selectedKeg:null
     });
   }
-  handleChangingSelectedKeg =(id)=>{
+  handleChangeSelectedKeg =(id)=>{
     const selectedKeg =this.state.mainKegList.filter(keg=>keg.id===id)[0];
     this.setState({
       selectedKeg:selectedKeg
+    });
+  }
+  handleEditClick=()=>{
+    this.setState({edit:true});
+  }
+  handleEditKegInList=(kegToBeEdited)=>{
+    const editedmainKegList =this.state.mainKegList
+    .fileter(keg=>keg.id!==this.state.selectedKeg.id)
+    .concat(kegToBeEdited);
+    this.setState({
+      mainKegList:editedmainKegList,
+      edit:false,
+      selectedKeg:null
     });
   }
   render() {
     let currentlyVisibleState =null;
     let buttonText =null;
     return (
-      <div>KegControl</div>
+        <React.Fragment>
+          {currentlyVisibleState}
+          <button onClick={this.handleClick}> {buttonText}</button>
+        </React.Fragment>
     )
   }
 }

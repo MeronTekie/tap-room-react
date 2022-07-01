@@ -7,9 +7,24 @@ export class KegControl extends Component {
       formVisibleOnPage :false,
       mainKegList:[],
       selectedKeg:null,
-      editing:false
+      edit:false
     };
     this.handleClick =this.handleClick.bind(this)
+  }
+  handleClick =()=>{
+    if(this.state.selectedKeg!=null){
+      this.setState({
+        formVisibleOnPage:false,
+        selectedKeg:null,
+        edit:false
+      });
+    } else{
+      this.setState(prevState =>(
+        {
+          formVisibleOnPage:!prevState.formVisibleOnPage
+        }
+      ));
+    }
   }
   render() {
     return (

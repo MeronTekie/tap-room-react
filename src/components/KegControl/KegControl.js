@@ -36,11 +36,17 @@ export class KegControl extends Component {
     });
   }
 
-  handleDeletingKeg =(id)=>{
+  handleDeletionKeg =(id)=>{
     const newMainKegList =this.state.mainKegList.filter(keg=>keg.id!==id);
     this.setState({
       mainKegList:newMainKegList,
       selectedKeg:null
+    });
+  }
+  handleChangingSelectedKeg =(id)=>{
+    const selectedKeg =this.state.mainKegList.filter(keg=>keg.id===id)[0];
+    this.setState({
+      selectedKeg:selectedKeg
     });
   }
   render() {

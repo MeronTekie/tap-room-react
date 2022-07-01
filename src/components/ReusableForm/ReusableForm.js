@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 const ReusableForm = (props) => {
+  const min =120;
+  const max =124;
   return (
     
     <React.Fragment>
@@ -26,6 +28,12 @@ const ReusableForm = (props) => {
         type="text" 
         name="type" 
         placeholder='Enter the type ' />
+        <input
+        type="number" 
+        name="pints" 
+        placeholder='Enter the pint amount'
+        min={min}
+        max={max}/>
         <button type='submit'>{props.buttonText}</button>
       </form>
     </React.Fragment>

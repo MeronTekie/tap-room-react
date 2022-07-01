@@ -1,3 +1,4 @@
+import { keyboard } from '@testing-library/user-event/dist/keyboard';
 import React, { Component } from 'react'
 import NewKegForm from '../NewKegForm/NewKegForm';
 
@@ -30,8 +31,16 @@ export class KegControl extends Component {
   handleAddingNewKegToList =(newKeg)=>{
     const  newMainKegList =this.state.mainKegList.concat(newKeg);
     this.setState({
-      mainKegList:newMainKegList,
+      mainKegList : newMainKegList,
       formVisibleOnPage:false
+    });
+  }
+
+  handleDeletingKeg =(id)=>{
+    const newMainKegList =this.state.mainKegList.filter(keg=>keg.id!==id);
+    this.setState({
+      mainKegList:newMainKegList,
+      selectedKeg:null
     });
   }
   render() {

@@ -1,7 +1,12 @@
 # Tap-Room CRUD 
 
+## Flow-Chart Diagram of the project
+<img src ="/public/Diagram.png" width="100%" height="400">
+
+
 ## Description
- The app is built for a local brewery to operate the number of sales of beer by adding updating deleting and displaying the information abut the beer they have in the inventory
+
+ The app is built for a local brewery to operate the number of sales of beer by adding updating deleting and displaying the information abut the beer they have in the inventory. The purpose of the application is to show the full CRUD operation of Application using REACT library.
 
 ## Technologies Used
 
@@ -11,18 +16,26 @@
 <img src="https://github.com/devicons/devicon/blob/v2.15.1/icons/react/react-original-wordmark.svg" width="35" height="35"/><br>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" width="35" height="35"/><br>
 <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" width="35" height="35"/><br>
+
+
 ## Bugs
 - No Known Bugs 
-##
+
+## To Run The Application In your Own Machine follow the directions mentioned below
+
+- First clone the project from the [Github](https://github.com/MeronTekie/tap-room-react.git)
+- Open  Terminal
+- Type ```git clone https://github.com/MeronTekie/tap-room-react.git```
+- Navigate to the directory using ```cd  file_name```
+- Then type ```code .``` to open it in your default text Editor(VSCode highly Recommended) 
+- Type ```npm install``` to restore the existing and install the missing  npm dependencies.
+- Type ```npm start``` to preview your application in your browser
 
 
+## License
 
-
-
-
-
-
-## Getting Started with Create React App
+[MIT License](LICENSE).
+Copyright (c) 2022 <br>Meron G.Tekie
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -12,13 +12,13 @@ const Keg = (props) => {
 						<div className="col-12 title">{props.name}</div>
 						<div className="col-12 content">
 							<p>
-								<strong>Brand: </strong> {props.brandName}
+								<strong>Country: </strong> {props.country}
 							</p>
 							<p>
 								<strong>Alcohol Content: </strong> {props.alcoholContent} %
 							</p>
 							<p>
-								<strong> Price: </strong> {props.price}
+								<strong> Price: </strong> {props.price}.99 USD
 							</p>
 							<br />
 							<button className="btn btn-dark buttons">

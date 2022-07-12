@@ -9,7 +9,7 @@ import './NewKegForm.css'
     event.preventDefault();
     props.onNewKegCreation({
       name: event.target.name.value, 
-      brandName: event.target.brandName.value,
+      country: event.target.country.value,
       price: parseInt(event.target.price.value),
       alcoholContent: parseInt(event.target.alcoholContent.value), 
       type: event.target.type.value,

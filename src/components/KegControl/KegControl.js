@@ -15,23 +15,23 @@ class KegControl extends Component {
       mainKegList:[
         {
           name: 'Corona',
-          brandName:'Corona',
-          alcoholContent:14,
-          type:'Draft',
+          country:'Mexico',
+          alcoholContent:4,
+          type:'Pilsner',
           price:3,
           pints:124
         },
         {
-          name: 'Corona',
-          brandName:'Corona',
+          name: 'Samuel Adams',
+          country:'USA',
           alcoholContent:14,
-          type:'Draft',
+          type:'Lager',
           price:3,
           pints:124
         },
         {
-          name: 'Corona',
-          brandName:'Corona',
+          name: 'Stella',
+          country:'Belgium',
           alcoholContent:14,
           type:'Draft',
           price:3,
@@ -48,7 +48,8 @@ class KegControl extends Component {
       this.setState({
         formVisibleOnPage:false,
         selectedKeg:null,
-        edit:false
+        edit:false,
+        pints:124
       });
     } else{
       this.setState(prevState =>(

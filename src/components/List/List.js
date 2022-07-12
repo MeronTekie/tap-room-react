@@ -9,7 +9,7 @@ const List = (props) => {
 				<Keg
 				  whenKegClicked={props.onSelect}
 					name={keg.name}
-          brandName={keg.brandName}
+          country={keg.country}
           price={keg.price}
 					type={keg.type}
 					alcoholContent={keg.alcoholContent}

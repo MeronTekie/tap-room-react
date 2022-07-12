@@ -16,8 +16,8 @@ const ReusableForm = (props) => {
         <br />
         <input 
         type="text" 
-        name="brandName"
-        placeholder='Brand:' />
+        name="country"
+        placeholder='Country:' />
         <br />
         <br />
         <input

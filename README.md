@@ -1,4 +1,28 @@
-# Getting Started with Create React App
+# Tap-Room CRUD 
+
+## Description
+ The app is built for a local brewery to operate the number of sales of beer by adding updating deleting and displaying the information abut the beer they have in the inventory
+
+## Technologies Used
+
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" width="35" height="35"/> <br>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" width="35" height="35"/> <br>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" width="35" height="35"/><br>
+<img src="https://github.com/devicons/devicon/blob/v2.15.1/icons/react/react-original-wordmark.svg" width="35" height="35"/><br>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" width="35" height="35"/><br>
+<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original-wordmark.svg" width="35" height="35"/><br>
+## Bugs
+- No Known Bugs 
+##
+
+
+
+
+
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

@@ -1,0 +1,21 @@
+.title{
+  text-align: center;
+  font-size: 50px;
+}
+.card{
+  height: 50vh;
+  background-color: beige;
+}
+.content p{
+  font-size: 25px;
+  margin-left: 10%;
+}
+.space{
+  margin-top: 20px;
+  margin-left: 32%;
+}
+.buttons{
+  margin-left: 10%;
+  width: 70%;
+  background-color: rgb(98, 100, 139);
+}

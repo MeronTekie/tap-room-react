@@ -1,24 +1,29 @@
-import React from 'react'
+import React from "react";
 import Keg from '../Keg.js/Keg'
-import PropTypes from 'prop-types'
-
+import PropTypes from "prop-types";
 
 const List = (props) => {
-  return (
-    <div>
-      {props.list.map(keg=>
-        <Keg
-        whenClicked={props.onSelect}
-        name={keg.name}
-        id={keg.id}
-        key ={keg.id}
-        />)}
-    </div>
-  )
-}
-List.propTypes ={
-  list:PropTypes.array,
-  onSelect:PropTypes.func
-}
+	return (
+		<div>
+			{props.list.map((keg) => (
+				<Keg
+				  whenKegClicked={props.onSelect}
+					name={keg.name}
+          brandName={keg.brandName}
+          price={keg.price}
+					type={keg.type}
+					alcoholContent={keg.alcoholContent}
+          pints={keg.pints}
+					id={keg.id}
+					key={keg.id}
+				/>
+			))}
+		</div>
+	);
+};
+List.propTypes = {
+	list: PropTypes.array,
+	onSelect: PropTypes.func,
+};
 
-export default List
+export default List;

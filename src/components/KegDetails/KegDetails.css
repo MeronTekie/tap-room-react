@@ -1,0 +1,14 @@
+.card-1{
+  background-color: rgb(149, 147, 148);
+  align-items: center;
+  margin-left: 30%;
+  
+  width: 50%;
+  height: 60vh;
+}
+.detail{
+  text-align: center;
+}
+.text{
+  margin-left: 10%;
+}

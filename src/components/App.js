@@ -3,11 +3,12 @@ import Header from './Header';
 import KegControl from './KegControl/KegControl';
 function App() {
   return (
-    <div className="App">
-    <Header/>
-    <KegControl/>
-
-    </div>
+    <React.Fragment>
+      <div className="App">
+      <Header/>
+      <KegControl/>
+      </div>
+    </React.Fragment>
   );
 }
 

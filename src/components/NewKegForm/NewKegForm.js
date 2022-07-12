@@ -4,16 +4,16 @@ import PropTypes from 'prop-types'
 import ReusableForm from '../ReusableForm/ReusableForm'
 import './NewKegForm.css'
 
-const NewKegForm = (props) => {
- const  newKegFormSubmission=(event)=>{
+ const NewKegForm = (props) => {
+  const  newKegFormSubmission=(event)=>{
     event.preventDefault();
-    props.newKegCreation({
+    props.onNewKegCreation({
       name: event.target.name.value, 
+      brandName: event.target.brandName.value,
       price: parseInt(event.target.price.value),
-      brewery: event.target.brewery.value,
-      flavor: event.target.flavor.value,
       alcoholContent: parseInt(event.target.alcoholContent.value), 
-      pints: parseInt(event.target.pints.value),
+      type: event.target.type.value,
+      pints: 124,
       id: v4()
     })
 
@@ -30,7 +30,7 @@ const NewKegForm = (props) => {
   )
 }
 NewKegForm.propTypes ={
-  newKegCreation:PropTypes.func
+  onNewKegCreation:PropTypes.func
 }
 
 

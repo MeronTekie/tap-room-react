@@ -1,40 +1,44 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import "bootstrap/dist/css/bootstrap.css";
 
 const ReusableForm = (props) => {
-  const min =120;
-  const max =124;
   return (
     <div className='card'>
       <React.Fragment>
       <form onSubmit={props.formSubmissionHandler}>
+      <br />
         <input 
         type="text"
         name="name" 
-        placeholder='Enter the name' />
+        placeholder='Name:' />
+        <br />
+        <br />
         <input 
         type="text" 
         name="brandName"
-        placeholder='Enter the brand' />
+        placeholder='Brand:' />
+        <br />
+        <br />
         <input
         type="number" 
         name="price" 
-        placeholder='Enter the price'/>
+        placeholder='Price:'/>
+        <br />
+        <br />
         <input
         type="text" 
         name="alcoholContent" 
-        placeholder='Enter the alcohol content ' />
+        placeholder='Alcohol Content: ' />
+        <br />
+        <br />
         <input
         type="text" 
         name="type" 
-        placeholder='Enter the type ' />
-        <input
-        type="number" 
-        name="pints" 
-        placeholder='Enter the pint amount'
-        min={min}
-        max={max}/>
-        <button type='submit'>{props.buttonText}</button>
+        placeholder='Type:' />
+        <br />
+        <br />
+        <button type='submit' className='btn btn-success'>{props.buttonText}</button>
       </form>
     </React.Fragment>
   </div>

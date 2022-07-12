@@ -1,26 +1,39 @@
-import React from 'react'
-import PropTypes from "prop-types"
+import React from "react";
+import PropTypes from "prop-types";
+import 'bootstrap/dist/css/bootstrap.css';
+import './KegDetails.css'
 
 
 const KegDetails = (props) => {
-  const{ keg, onClickDelete} =props;
-  return (
-    <React.Fragment>
-      <h1>{keg.name} Details</h1>
-      <p>{keg.price}</p>
-      <p>{keg.alcoholContent} % alcohol level</p>
-      <p>{keg.pints}</p>
-        <button onClick={ props.onClickEdit }>Update Keg Info</button>
-        <button onClick={ props.onClickDecrement }>Decrement Pint</button>
-        <button onClick={()=> onClickDelete(keg.id)}>Delete Keg</button>
-    </React.Fragment>
-  )
-}
+	const { keg, onClickingDelete,onClickingDecrement } = props;
+	
+	return (
+		<React.Fragment>
+				<div className="col-3 card-1">
+					<div >
+					    <h1 className="detail"> Details</h1>
+						<div className="col-8 text">
+							<h3>Name:{keg.name}</h3>
+							<h3>Type:{keg.type}</h3>
+							<p>Price:{keg.price}</p>
+							<p>Alcohol:{keg.alcoholContent} % </p>
+							<p>Pints:{keg.pints}</p>
+						</div>
+					  <div>
+					  	<button className="btn btn-primary" onClick={props.onClickingEdit}>Update </button> 
+			        <button  className="btn btn-success" onClick={()=>onClickingDecrement(keg.id)}>Sell</button>
+			        <button  className="btn btn-danger" onClick={() => onClickingDelete(keg.id)}>Delete</button>
+						</div>
+					</div>
+		   	</div>
+		</React.Fragment>
+	);
+};
 KegDetails.propTypes = {
-  keg: PropTypes.object,
-  onClickDelete: PropTypes.func,
-  onClickEdit: PropTypes.func,
-  onClickDecrement: PropTypes.func
+	keg: PropTypes.object,
+	onClickingDelete: PropTypes.func,
+	onClickingEdit: PropTypes.func,
+	onClickingDecrement: PropTypes.func,
 };
 
-export default KegDetails
+export default KegDetails;

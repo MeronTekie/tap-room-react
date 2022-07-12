@@ -1,26 +1,44 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react";
+import PropTypes from "prop-types";
+import "bootstrap/dist/css/bootstrap.css";
+import "./Keg.css";
 
 const Keg = (props) => {
-  return (
-    <div>
-      <React.Fragment>
-            <div onClick = {()=> props.whenKegClicked(props.id)}>
-                <h3>{props.name}</h3>
-            </div>
-        </React.Fragment>
-    </div>
-  )
-}
-Keg.propTypes ={
-  name:PropTypes.string.isRequired,
-  brandName:PropTypes.string.isRequired,
-  alcoholContent:PropTypes.string.isRequired,
-  type:PropTypes.string.isRequired,
-  pints:PropTypes.number,
-  price:PropTypes.number.isRequired,
-  id:PropTypes.string,
-  whenKegClicked:PropTypes.func
-}
+	return (
+		<React.Fragment>
+			<div className="row-12">
+				<div className="col-4 card space">
+					<div onClick={() => props.whenKegClicked(props.id)}>
+						<div className="col-12 title">{props.name}</div>
+						<div className="col-12 content">
+							<p>
+								<strong>Brand: </strong> {props.brandName}
+							</p>
+							<p>
+								<strong>Alcohol Content: </strong> {props.alcoholContent} %
+							</p>
+							<p>
+								<strong> Price: </strong> {props.price}
+							</p>
+							<br />
+							<button className="btn btn-dark buttons">
+								{props.pints} /124 pints
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</React.Fragment>
+	);
+};
+Keg.propTypes = {
+	name: PropTypes.string.isRequired,
+	brandName: PropTypes.string.isRequired,
+	alcoholContent: PropTypes.string.isRequired,
+	type: PropTypes.string.isRequired,
+	price: PropTypes.number.isRequired,
+	id: PropTypes.string,
+	whenKegClicked: PropTypes.func,
+};
 
-export default Keg
+export default Keg;

@@ -1,5 +1,8 @@
-h1{
+.header{
   font-family:Avenir Next Condensed ;
   text-align: center;
-  font-size: 80px;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 90px;
+  color: rgb(60, 44, 75);
 }

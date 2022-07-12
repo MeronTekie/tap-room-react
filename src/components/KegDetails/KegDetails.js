@@ -14,7 +14,7 @@ const KegDetails = (props) => {
 					<div className="col-8 text">
 						<h3>Name:{keg.name}</h3>
 						<h3>Type:{keg.type}</h3>
-						<h3>Price:{keg.price}</h3>
+						<h3>Price:{keg.price}.99 USD</h3>
 						<h3>Alcohol:{keg.alcoholContent} % </h3>
 					</div>
 					<div className="row-12">

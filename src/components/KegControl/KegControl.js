@@ -20,23 +20,7 @@ class KegControl extends Component {
           type:'Pilsner',
           price:3,
           pints:124
-        },
-        {
-          name: 'Samuel Adams',
-          country:'USA',
-          alcoholContent:14,
-          type:'Lager',
-          price:3,
-          pints:124
-        },
-        {
-          name: 'Stella',
-          country:'Belgium',
-          alcoholContent:14,
-          type:'Draft',
-          price:3,
-          pints:124
-        },
+        }
       ],
       selectedKeg:null,
       edit:false

@@ -15,17 +15,18 @@ const KegDetails = (props) => {
 						<div className="col-8 text">
 							<h3>Name:{keg.name}</h3>
 							<h3>Type:{keg.type}</h3>
-							<p>Price:{keg.price}</p>
-							<p>Alcohol:{keg.alcoholContent} % </p>
-							<p>Pints:{keg.pints}</p>
+							<h3>Price:{keg.price}</h3>
+							<h3>Alcohol:{keg.alcoholContent} % </h3>
 						</div>
-					  <div className="buttons">
-							<div >
-								<button className="btn btn-primary col-6" onClick={props.onClickingEdit}>Update </button> 
-								<button  className="btn btn-success col-6" onClick={()=>onClickingDecrement(keg.id)}>Sell</button>
-							</div>
-							<div>
-								<button  className="btn btn-danger col-12" onClick={() => onClickingDelete(keg.id)}>Delete</button>
+						<div className="row-12">
+							<div className="buttons-2">
+								<div >
+									<button className="btn btn-primary col-6" onClick={props.onClickingEdit}>Update </button> 
+									<button  className="btn btn-success col-6" onClick={()=>onClickingDecrement(keg.id)}>Sell Beer</button>
+								</div>
+								<div>
+									<button  className="btn btn-danger col-12" onClick={() => onClickingDelete(keg.id)}>Delete</button>
+								</div>
 							</div>
 						</div>
 					</div>
